@@ -13,6 +13,9 @@
 		602C319F1F22AA720052EF9E /* LeftSidePanelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 602C319E1F22AA720052EF9E /* LeftSidePanelVC.swift */; };
 		602C31A11F22AE040052EF9E /* ContainerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 602C31A01F22AE040052EF9E /* ContainerVC.swift */; };
 		602C31A41F22B73F0052EF9E /* CenterVCDelegete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 602C31A31F22B73F0052EF9E /* CenterVCDelegete.swift */; };
+		603369391F24532B005B699D /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603369381F24532B005B699D /* UIViewExt.swift */; };
+		6033693B1F246920005B699D /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6033693A1F246920005B699D /* LoginVC.swift */; };
+		6033693D1F2484B6005B699D /* RoundedCornerTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6033693C1F2484B6005B699D /* RoundedCornerTextField.swift */; };
 		606183D01F2275E80016AAC3 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606183CF1F2275E80016AAC3 /* GradientView.swift */; };
 		606183D21F227FEB0016AAC3 /* RoundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606183D11F227FEB0016AAC3 /* RoundImageView.swift */; };
 		609E5D731F22138F00F73B66 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609E5D721F22138F00F73B66 /* AppDelegate.swift */; };
@@ -32,6 +35,9 @@
 		602C319E1F22AA720052EF9E /* LeftSidePanelVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftSidePanelVC.swift; sourceTree = "<group>"; };
 		602C31A01F22AE040052EF9E /* ContainerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerVC.swift; sourceTree = "<group>"; };
 		602C31A31F22B73F0052EF9E /* CenterVCDelegete.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CenterVCDelegete.swift; sourceTree = "<group>"; };
+		603369381F24532B005B699D /* UIViewExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
+		6033693A1F246920005B699D /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		6033693C1F2484B6005B699D /* RoundedCornerTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedCornerTextField.swift; sourceTree = "<group>"; };
 		606183CF1F2275E80016AAC3 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		606183D11F227FEB0016AAC3 /* RoundImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundImageView.swift; sourceTree = "<group>"; };
 		6063503C8CFAEACBD3BAA4BB /* Pods-rideSharing.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rideSharing.release.xcconfig"; path = "Pods/Target Support Files/Pods-rideSharing/Pods-rideSharing.release.xcconfig"; sourceTree = "<group>"; };
@@ -81,6 +87,14 @@
 			name = Protocols;
 			sourceTree = "<group>";
 		};
+		603369371F2452C8005B699D /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				603369381F24532B005B699D /* UIViewExt.swift */,
+			);
+			name = Extentions;
+			sourceTree = "<group>";
+		};
 		606183CC1F2275850016AAC3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +110,7 @@
 				602C31981F2283DE0052EF9E /* roundShadow.swift */,
 				602C319A1F2286A40052EF9E /* CircleView.swift */,
 				602C319C1F2289F20052EF9E /* RoundedShadowButton.swift */,
+				6033693C1F2484B6005B699D /* RoundedCornerTextField.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -106,6 +121,7 @@
 				602C319E1F22AA720052EF9E /* LeftSidePanelVC.swift */,
 				609E5D741F22138F00F73B66 /* HomeVC.swift */,
 				602C31A01F22AE040052EF9E /* ContainerVC.swift */,
+				6033693A1F246920005B699D /* LoginVC.swift */,
 			);
 			name = Controler;
 			sourceTree = "<group>";
@@ -131,6 +147,7 @@
 		609E5D711F22138F00F73B66 /* rideSharing */ = {
 			isa = PBXGroup;
 			children = (
+				603369371F2452C8005B699D /* Extentions */,
 				602C31A21F22B7060052EF9E /* Protocols */,
 				606183CC1F2275850016AAC3 /* Model */,
 				606183CD1F22759F0016AAC3 /* View */,
@@ -270,12 +287,15 @@
 			files = (
 				602C319D1F2289F20052EF9E /* RoundedShadowButton.swift in Sources */,
 				602C319F1F22AA720052EF9E /* LeftSidePanelVC.swift in Sources */,
+				6033693B1F246920005B699D /* LoginVC.swift in Sources */,
 				602C31A41F22B73F0052EF9E /* CenterVCDelegete.swift in Sources */,
 				602C319B1F2286A40052EF9E /* CircleView.swift in Sources */,
 				602C31A11F22AE040052EF9E /* ContainerVC.swift in Sources */,
+				603369391F24532B005B699D /* UIViewExt.swift in Sources */,
 				609E5D751F22138F00F73B66 /* HomeVC.swift in Sources */,
 				606183D21F227FEB0016AAC3 /* RoundImageView.swift in Sources */,
 				609E5D731F22138F00F73B66 /* AppDelegate.swift in Sources */,
+				6033693D1F2484B6005B699D /* RoundedCornerTextField.swift in Sources */,
 				606183D01F2275E80016AAC3 /* GradientView.swift in Sources */,
 				602C31991F2283DE0052EF9E /* roundShadow.swift in Sources */,
 			);
