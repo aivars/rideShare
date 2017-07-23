@@ -16,6 +16,8 @@
 		603369391F24532B005B699D /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603369381F24532B005B699D /* UIViewExt.swift */; };
 		6033693B1F246920005B699D /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6033693A1F246920005B699D /* LoginVC.swift */; };
 		6033693D1F2484B6005B699D /* RoundedCornerTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6033693C1F2484B6005B699D /* RoundedCornerTextField.swift */; };
+		6033693F1F25229F005B699D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6033693E1F25229F005B699D /* GoogleService-Info.plist */; };
+		603369421F252821005B699D /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603369411F252821005B699D /* DataService.swift */; };
 		606183D01F2275E80016AAC3 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606183CF1F2275E80016AAC3 /* GradientView.swift */; };
 		606183D21F227FEB0016AAC3 /* RoundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606183D11F227FEB0016AAC3 /* RoundImageView.swift */; };
 		609E5D731F22138F00F73B66 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609E5D721F22138F00F73B66 /* AppDelegate.swift */; };
@@ -38,6 +40,8 @@
 		603369381F24532B005B699D /* UIViewExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
 		6033693A1F246920005B699D /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		6033693C1F2484B6005B699D /* RoundedCornerTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedCornerTextField.swift; sourceTree = "<group>"; };
+		6033693E1F25229F005B699D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		603369411F252821005B699D /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		606183CF1F2275E80016AAC3 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		606183D11F227FEB0016AAC3 /* RoundImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundImageView.swift; sourceTree = "<group>"; };
 		6063503C8CFAEACBD3BAA4BB /* Pods-rideSharing.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rideSharing.release.xcconfig"; path = "Pods/Target Support Files/Pods-rideSharing/Pods-rideSharing.release.xcconfig"; sourceTree = "<group>"; };
@@ -95,6 +99,14 @@
 			name = Extentions;
 			sourceTree = "<group>";
 		};
+		603369401F252807005B699D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				603369411F252821005B699D /* DataService.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
 		606183CC1F2275850016AAC3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -147,6 +159,7 @@
 		609E5D711F22138F00F73B66 /* rideSharing */ = {
 			isa = PBXGroup;
 			children = (
+				603369401F252807005B699D /* Services */,
 				603369371F2452C8005B699D /* Extentions */,
 				602C31A21F22B7060052EF9E /* Protocols */,
 				606183CC1F2275850016AAC3 /* Model */,
@@ -157,6 +170,7 @@
 				609E5D791F22138F00F73B66 /* Assets.xcassets */,
 				609E5D7B1F22138F00F73B66 /* LaunchScreen.storyboard */,
 				609E5D7E1F22138F00F73B66 /* Info.plist */,
+				6033693E1F25229F005B699D /* GoogleService-Info.plist */,
 			);
 			path = rideSharing;
 			sourceTree = "<group>";
@@ -225,6 +239,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				609E5D7D1F22138F00F73B66 /* LaunchScreen.storyboard in Resources */,
+				6033693F1F25229F005B699D /* GoogleService-Info.plist in Resources */,
 				609E5D7A1F22138F00F73B66 /* Assets.xcassets in Resources */,
 				609E5D781F22138F00F73B66 /* Main.storyboard in Resources */,
 			);
@@ -286,6 +301,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				602C319D1F2289F20052EF9E /* RoundedShadowButton.swift in Sources */,
+				603369421F252821005B699D /* DataService.swift in Sources */,
 				602C319F1F22AA720052EF9E /* LeftSidePanelVC.swift in Sources */,
 				6033693B1F246920005B699D /* LoginVC.swift in Sources */,
 				602C31A41F22B73F0052EF9E /* CenterVCDelegete.swift in Sources */,

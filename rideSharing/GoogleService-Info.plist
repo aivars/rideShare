@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>226267086565-98udg3rm82ofr4mhb9520c6aqhp72uos.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.226267086565-98udg3rm82ofr4mhb9520c6aqhp72uos</string>
+	<key>API_KEY</key>
+	<string>AIzaSyACE4KfsaECIU4kajdK65z6DxH1JtWmWss</string>
+	<key>GCM_SENDER_ID</key>
+	<string>226267086565</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.sleepybytes.rideSharing</string>
+	<key>PROJECT_ID</key>
+	<string>ridesharing-d6e05</string>
+	<key>STORAGE_BUCKET</key>
+	<string>ridesharing-d6e05.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:226267086565:ios:6928def2f2ef8f80</string>
+	<key>DATABASE_URL</key>
+	<string>https://ridesharing-d6e05.firebaseio.com</string>
+</dict>
+</plist>
