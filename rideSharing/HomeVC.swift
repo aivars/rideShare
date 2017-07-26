@@ -8,6 +8,8 @@
 
 import UIKit
 import MapKit
+import  CoreLocation
+
 
 class HomeVC: UIViewController {
 
@@ -15,11 +17,35 @@ class HomeVC: UIViewController {
     @IBOutlet weak var actionButton: RoundedShadowButton!
     
     var delegate: CenterVCDelegate?
+    var manager: CLLocationManager?
+    var regionRadius: CLLocationDistance = 1000
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        manager = CLLocationManager()
         mapView.delegate = self as? MKMapViewDelegate
+        checkLocationStatus()
+        centerMapOnUserLocation()
+    }
+    
+    //Start Location and request access if needed
+    func checkLocationStatus(){
+        if CLLocationManager.authorizationStatus() == .authorizedWhenInUse {
+            
+            manager?.delegate = self
+            manager?.desiredAccuracy = kCLLocationAccuracyBest
+            manager?.startUpdatingLocation()
+        } else {
+            manager?.requestWhenInUseAuthorization()
+        }
+    
+    }
+    
+    func centerMapOnUserLocation (){
+        let coordinateRegion = MKCoordinateRegionMakeWithDistance(mapView.userLocation.coordinate, regionRadius * 2.0, regionRadius * 2.0)
+        mapView.setRegion(coordinateRegion, animated: true)
     }
 
     override func didReceiveMemoryWarning() {
@@ -33,6 +59,18 @@ class HomeVC: UIViewController {
 
     @IBAction func menuButtonPressed(_ sender: Any) {
         delegate?.toggleLeftPanel()
+    }
+}
+
+extension HomeVC: CLLocationManagerDelegate {
+    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+        checkLocationStatus()
+        if status == .authorizedWhenInUse {
+            checkLocationStatus()
+            mapView.showsUserLocation = true
+            mapView.userTrackingMode = .follow
+        }
+        
     }
 }
 
