@@ -25,6 +25,9 @@ class HomeVC: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         manager = CLLocationManager()
+        manager?.delegate = self
+        manager?.desiredAccuracy = kCLLocationAccuracyBest
+        
         mapView.delegate = self as? MKMapViewDelegate
         checkLocationStatus()
         centerMapOnUserLocation()
@@ -34,8 +37,6 @@ class HomeVC: UIViewController {
     func checkLocationStatus(){
         if CLLocationManager.authorizationStatus() == .authorizedWhenInUse {
             
-            manager?.delegate = self
-            manager?.desiredAccuracy = kCLLocationAccuracyBest
             manager?.startUpdatingLocation()
         } else {
             manager?.requestWhenInUseAuthorization()
@@ -59,6 +60,9 @@ class HomeVC: UIViewController {
 
     @IBAction func menuButtonPressed(_ sender: Any) {
         delegate?.toggleLeftPanel()
+    }
+    @IBAction func onCenterMapButton(_ sender: UIButton) {
+        centerMapOnUserLocation()
     }
 }
 
