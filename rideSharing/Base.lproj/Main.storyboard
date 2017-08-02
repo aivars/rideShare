@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -218,6 +218,7 @@
                     </view>
                     <connections>
                         <outlet property="actionButton" destination="64S-9c-8NW" id="Rtg-IV-3SC"/>
+                        <outlet property="centerMapButton" destination="GJe-sd-r9L" id="BQz-dT-5eA"/>
                         <outlet property="mapView" destination="xcK-du-Hyk" id="ynK-nw-1qY"/>
                     </connections>
                 </viewController>
@@ -413,7 +414,7 @@
                                             </connections>
                                         </button>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="ocf-dW-A9X">
-                                            <rect key="frame" x="48" y="187" width="320" height="362"/>
+                                            <rect key="frame" x="47" y="187" width="320" height="362"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="NcX-Xk-Jcu">
                                                     <rect key="frame" x="0.0" y="0.0" width="320" height="142"/>
