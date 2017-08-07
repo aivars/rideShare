@@ -219,6 +219,7 @@
                     <connections>
                         <outlet property="actionButton" destination="64S-9c-8NW" id="Rtg-IV-3SC"/>
                         <outlet property="centerMapButton" destination="GJe-sd-r9L" id="BQz-dT-5eA"/>
+                        <outlet property="destinationTextField" destination="Dvm-l1-6Wr" id="Dcj-tK-3t0"/>
                         <outlet property="mapView" destination="xcK-du-Hyk" id="ynK-nw-1qY"/>
                     </connections>
                 </viewController>
