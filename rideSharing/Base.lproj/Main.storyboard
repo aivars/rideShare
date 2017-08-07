@@ -122,7 +122,7 @@
                                                             <constraint firstAttribute="height" constant="15" id="JQE-aR-wgH"/>
                                                         </constraints>
                                                     </view>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Where are you going?" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dvm-l1-6Wr">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Where are you going?" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Dvm-l1-6Wr">
                                                         <rect key="frame" x="20" y="2" width="314" height="22"/>
                                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                         <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="16"/>
@@ -219,6 +219,7 @@
                     <connections>
                         <outlet property="actionButton" destination="64S-9c-8NW" id="Rtg-IV-3SC"/>
                         <outlet property="centerMapButton" destination="GJe-sd-r9L" id="BQz-dT-5eA"/>
+                        <outlet property="destinationCircle" destination="x1E-hO-dqW" id="Aoo-BC-fNQ"/>
                         <outlet property="destinationTextField" destination="Dvm-l1-6Wr" id="Dcj-tK-3t0"/>
                         <outlet property="mapView" destination="xcK-du-Hyk" id="ynK-nw-1qY"/>
                     </connections>
