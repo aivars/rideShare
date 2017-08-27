@@ -1,4 +1,4 @@
-# rideShare
+# Ride Share
 
 Ride sharing App, like Upwork or Lift
 
